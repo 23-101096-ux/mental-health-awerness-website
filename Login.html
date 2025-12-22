@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mental Health Awareness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="illustration">
+            <img src="asserts/image 2.png" alt="Mental Health">
+        </div>
+
+        <div class="login-box">
+            <h1>Welcome</h1>
+            
+            <!-- User Selection -->
+            <div class="user-select">
+                <div class="user-card" id="male-card" onclick="selectUser('male')">
+                    <div class="user-icon">👨</div>
+                    <div class="user-label">Male</div>
+                </div>
+                <div class="user-card" id="female-card" onclick="selectUser('female')">
+                    <div class="user-icon">👩</div>
+                    <div class="user-label">Female</div>
+                </div>
+            </div>
+
+            <!-- Login Form -->
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+
+            <button class="submit-btn" onclick="handleLogin()">Login</button>
+
+            <div class="error-message" id="error-message"></div>
+            <div class="success-message" id="success-message"></div>
+        </div>
+    </div>
+
+    <script src="login-script.js"></script>
+    <script src="theme-switcher.js"></script>
+</body>
+</html>
