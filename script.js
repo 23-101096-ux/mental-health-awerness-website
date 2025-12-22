@@ -1,29 +1,26 @@
-// ===== LOGIN CHECK (ONLY FOR INDEX PAGE) =====
-window.addEventListener('DOMContentLoaded', function() {
+// ===== LOGIN CHECK - MUST BE FIRST =====
+(function() {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     
-    // Only redirect if on index page and not logged in
-    if (!isLoggedIn || isLoggedIn !== 'true') {
-        window.location.href = 'login.html';
-        return;
+    // Check if we're on index.html
+    const currentPath = window.location.pathname;
+    const isIndexPage = currentPath.includes('index.html') || currentPath === '/' || currentPath.endsWith('/');
+    
+    // If on index and not logged in, redirect immediately
+    if (isIndexPage && (!isLoggedIn || isLoggedIn !== 'true')) {
+        console.log('Not logged in, redirecting to login...');
+        window.location.replace('login.html'); // Use replace instead of href
+        throw new Error('Redirecting to login'); // Stop all other code
     }
-});
+})();
 
-// Logout function (optional - add button to call this)
+// Logout function
 function logout() {
     localStorage.removeItem('isLoggedIn');
     localStorage.removeItem('userType');
     localStorage.removeItem('username');
-    window.location.href = 'login.html';
+    window.location.replace('login.html');
 }
-
-// Rest of your existing script.js code...
-
-
-
-
-
-
 
 
 
