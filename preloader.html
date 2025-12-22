@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 0.5s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 1s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 1.5s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 2s;"></div>
+
+        <div class="preloader-content">
+            <div class="brain-loader">
+                <svg viewBox="0 0 200 200">
+                    <path class="brain-path" d="M100,40 Q130,40 140,60 Q150,80 140,100 Q150,120 140,140 Q130,160 100,160 Q70,160 60,140 Q50,120 60,100 Q50,80 60,60 Q70,40 100,40 M100,60 Q85,65 85,80 Q85,95 100,100 Q115,95 115,80 Q115,65 100,60 M100,140 Q85,135 85,120 Q85,105 100,100 Q115,105 115,120 Q115,135 100,140"/>
+                </svg>
+            </div>
+            <div class="loading-text">Loading</div>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="loading-dots">
+                <span>.</span><span>.</span><span>.</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="preloder-script.js"></script>
+    <script src="theme-switcher.js"></script>
+</body>
+</html>
