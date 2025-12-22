@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo"><img src="asserts/Ornament 1.png" alt=""></div>
+        <ul class="nav-links">
+            <li><a href="#home" data-i18n="nav_home">HOME</a></li>
+            <li><a href="#about" data-i18n="nav_about">ABOUT</a></li>
+            <li><a href="#signs" data-i18n="nav_signs">SIGNS</a></li>
+            <li><a href="#people" data-i18n="nav_people">PEOPLE</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">GALLERY</a></li>
+            <li><a href="Contact-us.html" data-i18n="nav_contact">CONTACT</a></li><!-- Changed to link to contact page -->
+        </ul>
+        <div class="nav-icons">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+                <span id="theme-icon">🌙</span>
+            </button>
+            <button class="icon-btn">EN</button>
+        </div>
+    </nav>
+
+    <!-- Add id="home" to the slider -->
+    <div class="slider-container" id="home">
+        <div class="slider-wrapper">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <h1 data-i18n="hero_title">IT IS OKAY<br>NOT BE<br>OKAY!</h1>
+                    <p data-i18n="hero_subtitle">You're not alone, and support is always within reach.</p>
+                    <div class="buttons">
+                        <button class="btn btn-primary" data-i18n="hero_btn_learn">Learn More</button>
+                        <button class="btn btn-secondary" data-i18n="hero_btn_support">Get Support</button>
+                    </div>
+                </div>
+                <div class="slide-image">
+                    <img src="asserts/image 2.png" alt="Mental Health Illustration">
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide slide2">
+                <div class="slide-content">
+                    <h1 data-i18n="slide_cont_title">WHY MENTAL HEALTH MATTERS</h1>
+                    <p data-i18n="slide_cont_paragraph">Mental health affects how we think, feel, and act in our daily lives. It influences how we handle stress, build relationships, and make decisions. When mental health is neglected, it can impact physical health, work or academic performance, and overall quality of life. Raising awareness helps reduce stigma, encourages early support, and reminds people that taking care of their mental well-being is just as important as taking care of their body.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dots">
+            <div class="dot active" onclick="goToSlide(0)"></div>
+            <div class="dot" onclick="goToSlide(1)"></div>
+        </div>
+    </div>
+
+    <!-- id="about" already exists -->
+    <section class="about-section" id="about">
+        <div class="section-title">
+            <div class="background-text" data-i18n="about-mental">MENTAL HEALTH</div>
+            <h1 data-i18n="about-about">ABOUT</h1>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img src="asserts/kjk 1.png" alt="Mental Health Illustration">
+            </div>
+
+            <div class="text-content">
+                <p id="text-content" data-i18n="text-p">
+                    Emotions surge through us like invisible currents, shaping our thoughts, actions, and connections in profound ways. They range from the exhilarating rush of joy that lifts the spirit to the heavy ache of sorrow that grounds us in vulnerability, each one a raw signal from our deepest self.<span class="dots" id="dots">...</span><span class="more-text" id="more-text"> Far from mere reactions, emotions evolved as survival tools fear sharpening our instincts, love forging unbreakable bonds, and curiosity driving us to explore the unknown. They color every moment of our lives, influencing our decisions, relationships, and sense of meaning. Understanding and honoring our emotions is essential to mental well-being, allowing us to navigate life's complexities with authenticity and resilience.</span>
+                </p>
+                <button class="read-more-btn" id="read-more-btn" onclick="toggleReadMore()">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- id="signs" already exists -->
+    <section class="signs-section" id="signs">
+        <div class="section-header">
+            <h1>SIGNS YOU<br>SHOULDN'T IGNORE</h1>
+        </div>
+
+        <div class="cards-container" id="cards-container">
+            <!-- Cards will be dynamically generated here -->
+        </div>
+
+        <div class="decorative-leaf">
+            <img src="asserts/- Statistics and infographic (Make sure to add real statistics about your awareness topic to add credibility to your site). - Create a slogan for your campaign. - Highlight current tap section in navbar (Hint_ use if condition with file). - Theme Switchin/" alt="Decorative Leaf">
+        </div>
+    </section>
+
+    <!-- id="people" already exists -->
+    <section class="testimonials-section" id="people">
+        <div class="testimonials-section-header">
+            <h1 class="testimonials-section-header__title">YOU ARE NOT ALONE</h1>
+            <div class="testimonials-section-header__subtitle">"EMOTIONAL REASSURANCE"</div>
+            <p class="testimonials-section-header__description">Voices from the Community</p>
+        </div>
+
+        <div class="testimonials-section-slider">
+            <div class="testimonials-section-card" id="slider-card">
+                <p class="testimonials-section-card__text" id="slider-text"></p>
+            </div>
+
+            <div class="testimonials-section-dots" id="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- id="gallery" already exists -->
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-header">
+            <h1>WHAT EMOTIONS LOOK LIKE</h1>
+            <p>Explore the visual representation of different emotional and mental health conditions. Click on any card to view the full image.</p>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+            <!-- Gallery items will be loaded here -->
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox(event)">×</button>
+            <img src="" alt="" class="lightbox-image" id="lightbox-image">
+            <div class="lightbox-title" id="lightbox-title"></div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+<script src="traslation.js"></script>
+<script src="theme-switcher.js"></script>
+<script src="language-switcher.js"></script>
+</body>
+</html>
