@@ -428,3 +428,64 @@ document.querySelector('.newsletter-input').addEventListener('keypress', functio
         document.querySelector('.newsletter-btn').click();
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const logoutBtn = document.getElementById('logout-btn');
+    
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', () => {
+            if (confirm('Are you sure you want to logout?')) {
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('userType');
+                localStorage.removeItem('username');
+                window.location.href = 'login.html';
+            }
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+// ==========================================
+// SCROLL TO TOP BUTTON
+// ==========================================
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+if (scrollTopBtn) {
+    // Show button when scrolling down 300px
+    window.addEventListener('scroll', () => {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    });
+
+    // Scroll to top when clicked
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Smooth scrolling effect
+        });
+    });
+}

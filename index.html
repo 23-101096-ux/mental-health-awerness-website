@@ -7,6 +7,8 @@
     <script>
         (function() {
             const isLoggedIn = localStorage.getItem('isLoggedIn');
+            // If NOT logged in, go to Login. 
+            // If logged in, stay here.
             if (!isLoggedIn || isLoggedIn !== 'true') {
                 window.location.replace('login.html');
             }
@@ -216,6 +218,8 @@
             </div>
         </div>
     </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><img src="asserts/weui_arrow-filled.png" alt=""></button>
 
 <script src="script.js"></script>
 <script src="traslation.js"></script>

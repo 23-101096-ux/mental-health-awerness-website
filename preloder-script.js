@@ -1,49 +1,25 @@
-   // Preloader Logic
-   window.addEventListener('load', function() {
-    // Simulate loading time (remove this in production)
-    setTimeout(function() {
-        const preloader = document.getElementById('preloader');
-        const mainContent = document.getElementById('mainContent');
-        
-        // Fade out preloader
-        preloader.classList.add('fade-out');
-        
-        // Show main content after preloader fades
-        setTimeout(function() {
-            mainContent.classList.add('show');
-        }, 500);
-    }, 3000); // 3 seconds demo - adjust or remove for production
-});
-
-// Alternative: Hide preloader as soon as page loads
-// Uncomment this for production and remove the setTimeout above
-/*
-window.addEventListener('load', function() {
-    const preloader = document.getElementById('preloader');
-    const mainContent = document.getElementById('mainContent');
-    
-    preloader.classList.add('fade-out');
-    setTimeout(function() {
-        mainContent.classList.add('show');
-    }, 500);
-});
-*/
-
-
-
-// Check if user is logged in
-// Check if user is logged in
+// Check if user is logged in when preloader loads
 window.addEventListener('DOMContentLoaded', function() {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     
-    // If not logged in, redirect to login page
+    // If not logged in, redirect back to login page
     if (!isLoggedIn || isLoggedIn !== 'true') {
         window.location.href = 'login.html';
         return;
     }
     
-    // If logged in, show preloader then redirect to main page
+    // If logged in, show preloader animation then redirect to main page
+    const preloader = document.getElementById('preloader');
+    
+    // Wait 3 seconds then redirect to index
     setTimeout(function() {
-        window.location.href = 'index.html';
-    }, 3000); // 3 seconds
+        if (preloader) {
+            preloader.classList.add('fade-out');
+        }
+        
+        // Redirect to index after fade animation
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 500);
+    }, 3000); // 3 seconds for preloader animation
 });
