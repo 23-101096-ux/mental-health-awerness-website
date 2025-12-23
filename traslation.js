@@ -20,8 +20,9 @@ const translations = {
         
         // About Section
         about_title: "ABOUT",
+        about_background: "MENTAL HEALTH",
         about_text_1: "Emotions surge through us like invisible currents, shaping our thoughts, actions, and connections in profound ways. They range from the exhilarating rush of joy that lifts the spirit to the heavy ache of sorrow that grounds us in vulnerability, each one a raw signal from our deepest self.",
-        about_text_2: "Far from mere reactions, emotions evolved as survival tools fear sharpening our instincts, love forging unbreakable bonds, and curiosity driving us to explore the unknown. They color every moment of our lives, influencing our decisions, relationships, and sense of meaning. Understanding and honoring our emotions is essential to mental well-being, allowing us to navigate life's complexities with authenticity and resilience.",
+        about_text_2: " Far from mere reactions, emotions evolved as survival tools fear sharpening our instincts, love forging unbreakable bonds, and curiosity driving us to explore the unknown. They color every moment of our lives, influencing our decisions, relationships, and sense of meaning. Understanding and honoring our emotions is essential to mental well-being, allowing us to navigate life's complexities with authenticity and resilience.",
         read_more: "Read More",
         read_less: "Read Less",
         
@@ -35,7 +36,7 @@ const translations = {
         
         // Testimonials Section
         testimonials_title: "YOU ARE NOT ALONE",
-        testimonials_subtitle: "EMOTIONAL REASSURANCE",
+        testimonials_subtitle: '"EMOTIONAL REASSURANCE"',
         testimonials_description: "Voices from the Community",
         
         // Gallery Section
@@ -52,9 +53,45 @@ const translations = {
         gallery_mood: "MOOD DISORDERS",
         gallery_anxiety: "ANXIETY DISORDER",
         gallery_dissociative: "DISSOCIATIVE DISORDERS",
-        gallery_sleep: "Sleep Disorders",
-        gallery_somatic: "Somatic Symptom Disorders",
-        gallery_impulse: "Impulse-Control DISORDERS"
+        gallery_sleep: "SLEEP DISORDERS",
+        gallery_somatic: "SOMATIC SYMPTOM DISORDERS",
+        gallery_impulse: "IMPULSE-CONTROL DISORDERS",
+        
+        // Footer
+        footer_title: "Mental Health Matters",
+        footer_description: "We're dedicated to raising awareness about mental health, reducing stigma, and providing resources for those who need support. Remember, it's okay not to be okay.",
+        footer_quick_links: "Quick Links",
+        footer_link_home: "Home",
+        footer_link_about: "About Us",
+        footer_link_signs: "Warning Signs",
+        footer_link_testimonials: "Testimonials",
+        footer_link_gallery: "Gallery",
+        footer_link_contact: "Contact",
+        footer_resources: "Resources",
+        footer_res_therapist: "Find a Therapist",
+        footer_res_groups: "Support Groups",
+        footer_res_crisis: "Crisis Centers",
+        footer_res_apps: "Mental Health Apps",
+        footer_res_articles: "Educational Articles",
+        footer_res_selfcare: "Self-Care Tips",
+        footer_newsletter: "Stay Connected",
+        footer_newsletter_desc: "Subscribe for mental health tips and resources",
+        footer_email_placeholder: "Enter your email",
+        footer_subscribe: "Subscribe",
+        footer_copyright: "© 2025 Mental Health Awareness. All rights reserved.",
+        footer_privacy: "Privacy Policy",
+        footer_terms: "Terms of Service",
+        footer_accessibility: "Accessibility",
+        
+        // Contact Page
+        contact_title_1: "CONTACT",
+        contact_title_2: "US",
+        contact_name: "Name",
+        contact_surname: "Surname",
+        contact_number: "Number",
+        contact_email: "Email",
+        contact_message: "Want to know more, Drop us a line",
+        contact_submit: "Submit"
     },
     
     ar: {
@@ -78,8 +115,9 @@ const translations = {
         
         // About Section
         about_title: "نبذة",
+        about_background: "الصحة النفسية",
         about_text_1: "تتدفق العواطف من خلالنا كتيارات غير مرئية، تشكل أفكارنا وأفعالنا وعلاقاتنا بطرق عميقة. تتراوح من الاندفاع المبهج للفرح الذي يرفع الروح إلى الألم الثقيل للحزن الذي يجذبنا إلى الضعف.",
-        about_text_2: "بعيداً عن كونها مجرد ردود فعل، تطورت العواطف كأدوات للبقاء - الخوف يشحذ غرائزنا، والحب يصنع روابط لا تنكسر، والفضول يدفعنا لاستكشاف المجهول. إنها تلون كل لحظة من حياتنا، وتؤثر على قراراتنا وعلاقاتنا وإحساسنا بالمعنى.",
+        about_text_2: " بعيداً عن كونها مجرد ردود فعل، تطورت العواطف كأدوات للبقاء - الخوف يشحذ غرائزنا، والحب يصنع روابط لا تنكسر، والفضول يدفعنا لاستكشاف المجهول. إنها تلون كل لحظة من حياتنا، وتؤثر على قراراتنا وعلاقاتنا وإحساسنا بالمعنى.",
         read_more: "اقرأ المزيد",
         read_less: "اقرأ أقل",
         
@@ -93,7 +131,7 @@ const translations = {
         
         // Testimonials Section
         testimonials_title: "أنت لست وحدك",
-        testimonials_subtitle: "طمأنة عاطفية",
+        testimonials_subtitle: '"طمأنة عاطفية"',
         testimonials_description: "أصوات من المجتمع",
         
         // Gallery Section
@@ -112,6 +150,42 @@ const translations = {
         gallery_dissociative: "الاضطرابات الانفصالية",
         gallery_sleep: "اضطرابات النوم",
         gallery_somatic: "اضطرابات الأعراض الجسدية",
-        gallery_impulse: "اضطرابات التحكم في الانفعالات"
+        gallery_impulse: "اضطرابات التحكم في الانفعالات",
+        
+        // Footer
+        footer_title: "الصحة النفسية مهمة",
+        footer_description: "نحن ملتزمون برفع الوعي حول الصحة النفسية، وتقليل الوصمة، وتوفير الموارد لمن يحتاجون إلى الدعم. تذكر، لا بأس ألا تكون بخير.",
+        footer_quick_links: "روابط سريعة",
+        footer_link_home: "الرئيسية",
+        footer_link_about: "من نحن",
+        footer_link_signs: "علامات التحذير",
+        footer_link_testimonials: "الشهادات",
+        footer_link_gallery: "المعرض",
+        footer_link_contact: "اتصل بنا",
+        footer_resources: "الموارد",
+        footer_res_therapist: "ابحث عن معالج",
+        footer_res_groups: "مجموعات الدعم",
+        footer_res_crisis: "مراكز الأزمات",
+        footer_res_apps: "تطبيقات الصحة النفسية",
+        footer_res_articles: "مقالات تعليمية",
+        footer_res_selfcare: "نصائح للعناية الذاتية",
+        footer_newsletter: "ابق على اتصال",
+        footer_newsletter_desc: "اشترك للحصول على نصائح وموارد الصحة النفسية",
+        footer_email_placeholder: "أدخل بريدك الإلكتروني",
+        footer_subscribe: "اشترك",
+        footer_copyright: "© 2025 التوعية بالصحة النفسية. جميع الحقوق محفوظة.",
+        footer_privacy: "سياسة الخصوصية",
+        footer_terms: "شروط الخدمة",
+        footer_accessibility: "إمكانية الوصول",
+        
+        // Contact Page
+        contact_title_1: "اتصل",
+        contact_title_2: "بنا",
+        contact_name: "الاسم",
+        contact_surname: "اسم العائلة",
+        contact_number: "رقم الهاتف",
+        contact_email: "البريد الإلكتروني",
+        contact_message: "هل تريد معرفة المزيد؟ أرسل لنا رسالة",
+        contact_submit: "إرسال"
     }
 };

@@ -24,7 +24,7 @@
             <li><a href="#signs" data-i18n="nav_signs">SIGNS</a></li>
             <li><a href="#people" data-i18n="nav_people">PEOPLE</a></li>
             <li><a href="#gallery" data-i18n="nav_gallery">GALLERY</a></li>
-            <li><a href="Contact-us.html" data-i18n="nav_contact">CONTACT</a></li><!-- Changed to link to contact page -->
+            <li><a href="Contact-us.html" data-i18n="nav_contact">CONTACT</a></li>
         </ul>
         <div class="nav-icons">
             <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
@@ -55,8 +55,8 @@
             <!-- Slide 2 -->
             <div class="slide slide2">
                 <div class="slide-content">
-                    <h1 data-i18n="slide_cont_title">WHY MENTAL HEALTH MATTERS</h1>
-                    <p data-i18n="slide_cont_paragraph">Mental health affects how we think, feel, and act in our daily lives. It influences how we handle stress, build relationships, and make decisions. When mental health is neglected, it can impact physical health, work or academic performance, and overall quality of life. Raising awareness helps reduce stigma, encourages early support, and reminds people that taking care of their mental well-being is just as important as taking care of their body.</p>
+                    <h1 data-i18n="slide2_title">WHY MENTAL HEALTH MATTERS</h1>
+                    <p data-i18n="slide2_text">Mental health affects how we think, feel, and act in our daily lives. It influences how we handle stress, build relationships, and make decisions. When mental health is neglected, it can impact physical health, work or academic performance, and overall quality of life. Raising awareness helps reduce stigma, encourages early support, and reminds people that taking care of their mental well-being is just as important as taking care of their body.</p>
                 </div>
             </div>
         </div>
@@ -70,8 +70,8 @@
     <!-- id="about" already exists -->
     <section class="about-section" id="about">
         <div class="section-title">
-            <div class="background-text" data-i18n="about-mental">MENTAL HEALTH</div>
-            <h1 data-i18n="about-about">ABOUT</h1>
+            <div class="background-text" data-i18n="about_background">MENTAL HEALTH</div>
+            <h1 data-i18n="about_title">ABOUT</h1>
         </div>
 
         <div class="content-wrapper">
@@ -80,10 +80,10 @@
             </div>
 
             <div class="text-content">
-                <p id="text-content" data-i18n="text-p">
-                    Emotions surge through us like invisible currents, shaping our thoughts, actions, and connections in profound ways. They range from the exhilarating rush of joy that lifts the spirit to the heavy ache of sorrow that grounds us in vulnerability, each one a raw signal from our deepest self.<span class="dots" id="dots">...</span><span class="more-text" id="more-text"> Far from mere reactions, emotions evolved as survival tools fear sharpening our instincts, love forging unbreakable bonds, and curiosity driving us to explore the unknown. They color every moment of our lives, influencing our decisions, relationships, and sense of meaning. Understanding and honoring our emotions is essential to mental well-being, allowing us to navigate life's complexities with authenticity and resilience.</span>
+                <p id="text-content">
+                    <span data-i18n="about_text_1">Emotions surge through us like invisible currents, shaping our thoughts, actions, and connections in profound ways. They range from the exhilarating rush of joy that lifts the spirit to the heavy ache of sorrow that grounds us in vulnerability, each one a raw signal from our deepest self.</span><span class="dots" id="dots">...</span><span class="more-text" id="more-text"><span data-i18n="about_text_2"> Far from mere reactions, emotions evolved as survival tools fear sharpening our instincts, love forging unbreakable bonds, and curiosity driving us to explore the unknown. They color every moment of our lives, influencing our decisions, relationships, and sense of meaning. Understanding and honoring our emotions is essential to mental well-being, allowing us to navigate life's complexities with authenticity and resilience.</span></span>
                 </p>
-                <button class="read-more-btn" id="read-more-btn" onclick="toggleReadMore()">Read More</button>
+                <button class="read-more-btn" id="read-more-btn" data-i18n="read_more" onclick="toggleReadMore()">Read More</button>
             </div>
         </div>
     </section>
@@ -91,22 +91,20 @@
     <!-- id="signs" already exists -->
     <section class="signs-section" id="signs">
         <div class="section-header">
-            <h1>SIGNS YOU<br>SHOULDN'T IGNORE</h1>
+            <h1 data-i18n="signs_title">SIGNS YOU<br>SHOULDN'T IGNORE</h1>
         </div>
 
         <div class="cards-container" id="cards-container">
             <!-- Cards will be dynamically generated here -->
         </div>
-
-        
     </section>
 
     <!-- id="people" already exists -->
     <section class="testimonials-section" id="people">
         <div class="testimonials-section-header">
-            <h1 class="testimonials-section-header__title">YOU ARE NOT ALONE</h1>
-            <div class="testimonials-section-header__subtitle">"EMOTIONAL REASSURANCE"</div>
-            <p class="testimonials-section-header__description">Voices from the Community</p>
+            <h1 class="testimonials-section-header__title" data-i18n="testimonials_title">YOU ARE NOT ALONE</h1>
+            <div class="testimonials-section-header__subtitle" data-i18n="testimonials_subtitle">"EMOTIONAL REASSURANCE"</div>
+            <p class="testimonials-section-header__description" data-i18n="testimonials_description">Voices from the Community</p>
         </div>
 
         <div class="testimonials-section-slider">
@@ -121,8 +119,8 @@
     <!-- id="gallery" already exists -->
     <section class="gallery-section" id="gallery">
         <div class="gallery-header">
-            <h1>WHAT EMOTIONS LOOK LIKE</h1>
-            <p>Explore the visual representation of different emotional and mental health conditions. Click on any card to view the full image.</p>
+            <h1 data-i18n="gallery_title">WHAT EMOTIONS LOOK LIKE</h1>
+            <p data-i18n="gallery_description">Explore the visual representation of different emotional and mental health conditions. Click on any card to view the full image.</p>
         </div>
 
         <div class="gallery-grid" id="gallery-grid">
@@ -139,11 +137,6 @@
         </div>
     </div>
 
-    <div class="demo-content">
-        <h1>Mental Health Awareness Website</h1>
-        <p>Scroll down to see the footer</p>
-    </div>
-
     <!-- FOOTER -->
     <footer>
         <div class="footer-container">
@@ -152,8 +145,8 @@
                 <!-- Brand Section -->
                 <div class="footer-brand">
                     <div class="footer-logo"><img src="asserts/Ornament 1.png" alt=""></div>
-                    <h2>Mental Health Matters</h2>
-                    <p>
+                    <h2 data-i18n="footer_title">Mental Health Matters</h2>
+                    <p data-i18n="footer_description">
                         We're dedicated to raising awareness about mental health, reducing stigma, 
                         and providing resources for those who need support. Remember, it's okay not to be okay.
                     </p>
@@ -167,57 +160,58 @@
 
                 <!-- Quick Links -->
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h3 data-i18n="footer_quick_links">Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#signs">Warning Signs</a></li>
-                        <li><a href="#people">Testimonials</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="Contact-us.html">Contact</a></li>
+                        <li><a href="#home" data-i18n="footer_link_home">Home</a></li>
+                        <li><a href="#about" data-i18n="footer_link_about">About Us</a></li>
+                        <li><a href="#signs" data-i18n="footer_link_signs">Warning Signs</a></li>
+                        <li><a href="#people" data-i18n="footer_link_testimonials">Testimonials</a></li>
+                        <li><a href="#gallery" data-i18n="footer_link_gallery">Gallery</a></li>
+                        <li><a href="Contact-us.html" data-i18n="footer_link_contact">Contact</a></li>
                     </ul>
                 </div>
 
                 <!-- Resources -->
                 <div class="footer-section">
-                    <h3>Resources</h3>
+                    <h3 data-i18n="footer_resources">Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Find a Therapist</a></li>
-                        <li><a href="#">Support Groups</a></li>
-                        <li><a href="#">Crisis Centers</a></li>
-                        <li><a href="#">Mental Health Apps</a></li>
-                        <li><a href="#">Educational Articles</a></li>
-                        <li><a href="#">Self-Care Tips</a></li>
+                        <li><a href="#" data-i18n="footer_res_therapist">Find a Therapist</a></li>
+                        <li><a href="#" data-i18n="footer_res_groups">Support Groups</a></li>
+                        <li><a href="#" data-i18n="footer_res_crisis">Crisis Centers</a></li>
+                        <li><a href="#" data-i18n="footer_res_apps">Mental Health Apps</a></li>
+                        <li><a href="#" data-i18n="footer_res_articles">Educational Articles</a></li>
+                        <li><a href="#" data-i18n="footer_res_selfcare">Self-Care Tips</a></li>
                     </ul>
                 </div>
 
                 <!-- Newsletter -->
                 <div class="footer-section">
-                    <h3>Stay Connected</h3>
-                    <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 15px;">
+                    <h3 data-i18n="footer_newsletter">Stay Connected</h3>
+                    <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 15px;" data-i18n="footer_newsletter_desc">
                         Subscribe for mental health tips and resources
                     </p>
                     <div class="footer-newsletter">
                         <input 
                             type="email" 
                             class="newsletter-input" 
+                            data-i18n-placeholder="footer_email_placeholder"
                             placeholder="Enter your email"
                             aria-label="Email for newsletter"
                         >
-                        <button class="newsletter-btn">Subscribe</button>
+                        <button class="newsletter-btn" data-i18n="footer_subscribe">Subscribe</button>
                     </div>
                 </div>
             </div>
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p class="footer-copyright">
+                <p class="footer-copyright" data-i18n="footer_copyright">
                     © 2025 Mental Health Awareness. All rights reserved.
                 </p>
                 <ul class="footer-bottom-links">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+                    <li><a href="#" data-i18n="footer_terms">Terms of Service</a></li>
+                    <li><a href="#" data-i18n="footer_accessibility">Accessibility</a></li>
                 </ul>
             </div>
         </div>

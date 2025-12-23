@@ -12,10 +12,10 @@
         <div class="logo"><img src="asserts/Ornament 1.png" alt=""></div>
         <ul class="nav-links">
             <li><a href="index.html" data-i18n="nav_home">HOME</a></li>
-            <li><a href="#about" data-i18n="nav_about">ABOUT</a></li>
-            <li><a href="#signs" data-i18n="nav_signs">SIGNS</a></li>
-            <li><a href="#people" data-i18n="nav_people">PEOPLE</a></li>
-            <li><a href="#gallery" data-i18n="nav_gallery">GALLERY</a></li>
+            <li><a href="index.html#about" data-i18n="nav_about">ABOUT</a></li>
+            <li><a href="index.html#signs" data-i18n="nav_signs">SIGNS</a></li>
+            <li><a href="index.html#people" data-i18n="nav_people">PEOPLE</a></li>
+            <li><a href="index.html#gallery" data-i18n="nav_gallery">GALLERY</a></li>
             <li><a href="Contact-us.html" data-i18n="nav_contact">CONTACT</a></li>
         </ul>
         <div class="nav-icons">
@@ -29,38 +29,33 @@
     <div class="container">
         <div class="title-section">
             <h1 class="title">
-                <span class="title-main">CONTACT</span>
-                <span class="title-shadow">CONTACT</span>
+                <span class="title-main" data-i18n="contact_title_1">CONTACT</span>
+                <span class="title-shadow" data-i18n="contact_title_1">CONTACT</span>
             </h1>
             <h1 class="title">
-                <span class="title-main">US</span>
-                <span class="title-shadow">US</span>
+                <span class="title-main" data-i18n="contact_title_2">US</span>
+                <span class="title-shadow" data-i18n="contact_title_2">US</span>
             </h1>
         </div>
     
         <div class="form-section">
             <form id="contactForm">
                 <div class="form-row">
-                    <input type="text" id="name" placeholder="Name" required>
-                    <input type="text" id="surname" placeholder="Surname" required>
+                    <input type="text" id="name" data-i18n-placeholder="contact_name" placeholder="Name" required>
+                    <input type="text" id="surname" data-i18n-placeholder="contact_surname" placeholder="Surname" required>
                 </div>
                 <div class="form-row">
-                    <input type="tel" id="number" placeholder="Number" required>
-                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="tel" id="number" data-i18n-placeholder="contact_number" placeholder="Number" required>
+                    <input type="email" id="email" data-i18n-placeholder="contact_email" placeholder="Email" required>
                 </div>
                 <div class="form-group full-width">
-                    <input type="text" id="message" placeholder="Want to know more, Drop us a line" required>
+                    <input type="text" id="message" data-i18n-placeholder="contact_message" placeholder="Want to know more, Drop us a line" required>
                 </div>
-                <button type="submit" class="submit-btn">Submit</button>
+                <button type="submit" class="submit-btn" data-i18n="contact_submit">Submit</button>
             </form>
         </div>
     </div>
 
-
-
-
-
- 
     <!-- FOOTER -->
     <footer>
         <div class="footer-container">
@@ -69,8 +64,8 @@
                 <!-- Brand Section -->
                 <div class="footer-brand">
                     <div class="footer-logo"><img src="asserts/Ornament 1.png" alt=""></div>
-                    <h2>Mental Health Matters</h2>
-                    <p>
+                    <h2 data-i18n="footer_title">Mental Health Matters</h2>
+                    <p data-i18n="footer_description">
                         We're dedicated to raising awareness about mental health, reducing stigma, 
                         and providing resources for those who need support. Remember, it's okay not to be okay.
                     </p>
@@ -84,65 +79,64 @@
 
                 <!-- Quick Links -->
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h3 data-i18n="footer_quick_links">Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#signs">Warning Signs</a></li>
-                        <li><a href="#people">Testimonials</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="Contact-us.html">Contact</a></li>
+                        <li><a href="index.html#home" data-i18n="footer_link_home">Home</a></li>
+                        <li><a href="index.html#about" data-i18n="footer_link_about">About Us</a></li>
+                        <li><a href="index.html#signs" data-i18n="footer_link_signs">Warning Signs</a></li>
+                        <li><a href="index.html#people" data-i18n="footer_link_testimonials">Testimonials</a></li>
+                        <li><a href="index.html#gallery" data-i18n="footer_link_gallery">Gallery</a></li>
+                        <li><a href="Contact-us.html" data-i18n="footer_link_contact">Contact</a></li>
                     </ul>
                 </div>
 
                 <!-- Resources -->
                 <div class="footer-section">
-                    <h3>Resources</h3>
+                    <h3 data-i18n="footer_resources">Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Find a Therapist</a></li>
-                        <li><a href="#">Support Groups</a></li>
-                        <li><a href="#">Crisis Centers</a></li>
-                        <li><a href="#">Mental Health Apps</a></li>
-                        <li><a href="#">Educational Articles</a></li>
-                        <li><a href="#">Self-Care Tips</a></li>
+                        <li><a href="#" data-i18n="footer_res_therapist">Find a Therapist</a></li>
+                        <li><a href="#" data-i18n="footer_res_groups">Support Groups</a></li>
+                        <li><a href="#" data-i18n="footer_res_crisis">Crisis Centers</a></li>
+                        <li><a href="#" data-i18n="footer_res_apps">Mental Health Apps</a></li>
+                        <li><a href="#" data-i18n="footer_res_articles">Educational Articles</a></li>
+                        <li><a href="#" data-i18n="footer_res_selfcare">Self-Care Tips</a></li>
                     </ul>
                 </div>
 
                 <!-- Newsletter -->
                 <div class="footer-section">
-                    <h3>Stay Connected</h3>
-                    <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 15px;">
+                    <h3 data-i18n="footer_newsletter">Stay Connected</h3>
+                    <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 15px;" data-i18n="footer_newsletter_desc">
                         Subscribe for mental health tips and resources
                     </p>
                     <div class="footer-newsletter">
                         <input 
                             type="email" 
                             class="newsletter-input" 
+                            data-i18n-placeholder="footer_email_placeholder"
                             placeholder="Enter your email"
                             aria-label="Email for newsletter"
                         >
-                        <button class="newsletter-btn">Subscribe</button>
+                        <button class="newsletter-btn" data-i18n="footer_subscribe">Subscribe</button>
                     </div>
                 </div>
             </div>
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p class="footer-copyright">
+                <p class="footer-copyright" data-i18n="footer_copyright">
                     © 2025 Mental Health Awareness. All rights reserved.
                 </p>
                 <ul class="footer-bottom-links">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+                    <li><a href="#" data-i18n="footer_terms">Terms of Service</a></li>
+                    <li><a href="#" data-i18n="footer_accessibility">Accessibility</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
-
-
-
+    <script src="traslation.js"></script>
     <script src="localstorga.js"></script>
     <script src="theme-switcher.js"></script>
     <script src="language-switcher.js"></script>
